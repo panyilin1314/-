@@ -1,5 +1,5 @@
 $.ajaxPrefilter(function (data) {
-    console.log(data);
+    // console.log(data);
     data.url = 'http://ajax.frontend.itheima.net' + data.url;
     // 统一为有权限的加请求头
     if (data.url.indexOf('/my') != -1) {
@@ -8,7 +8,7 @@ $.ajaxPrefilter(function (data) {
         }
     }
     data.complete = function (res) {
-        console.log(res);
+        // console.log(res);
         if (res.responseJSON.status == 1) {
             location.href = 'login.html'
             // 这里有必要清空token吗
