@@ -63,7 +63,7 @@ function renderAvatar(data) {
     $('#welcome').html(`欢迎&nbsp;${uname}`)
     // 渲染头像
     if (data.user_pic != null) {
-        $('.layui-nav-img').prop('src', data.user_pic);
+        $('.layui-nav-img').prop('src', data.user_pic).show();
         $('.textAvatar').hide()
     } else {
         let firstText = uname[0].toUpperCase()
