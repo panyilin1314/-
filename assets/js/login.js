@@ -49,7 +49,7 @@ $(function () {
                 localStorage.setItem('token',res.token)
                 // 跳转后台主页
                 // console.log(location.href);
-                // location.href='/index.html'
+                location.href='/index.html'
             }
         });
         return false;
