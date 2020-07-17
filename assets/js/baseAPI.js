@@ -9,11 +9,11 @@ $.ajaxPrefilter(function (data) {
     }
     data.complete = function (res) {
         // console.log(res);
-        if (res.responseJSON.status == 1) {
-            location.href = 'login.html'
+        if (res.responseJSON.status == 1 ) {
+            location.href = '/login.html'
             // 这里有必要清空token吗
-            localStorage.removeItem('token')
-
+            // localStorage.removeItem('token')
+            // location.href = '/login.html'
         }
     }
 

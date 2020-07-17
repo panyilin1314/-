@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ccc;
+    padding: 15px;
+}
+
+.layui-card-header {
+    position: relative;
+}
+
+.layui-btn-sm {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#formAdd,
+#formAmend{
+    padding: 30px;
+}

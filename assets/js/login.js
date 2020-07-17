@@ -75,7 +75,8 @@ $(function () {
         , pass: [
             /^[\S]{6,12}$/
             , '密码必须6到12位，且不能出现空格'
-        ], repass: function () {
+        ], 
+        repass: function () {
             let val = $('.regBox [name="password"]').val();
             let reVal = $('.regBox [name="repassword"]').val();
             // console.log(val, reVal);
