@@ -9,7 +9,7 @@ $.ajaxPrefilter(function (data) {
     }
     data.complete = function (res) {
         // console.log(res);
-        if (res.responseJSON.status == 1 ) {
+        if (res.responseJSON.status == 1 && res.responseJSON.message === '身份认证失败！') {
             location.href = '/login.html'
             // 这里有必要清空token吗
             // localStorage.removeItem('token')
